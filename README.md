@@ -1,5 +1,5 @@
-# FreeAlternativeSoftwares
-## Free Alternatives for famous non-free softwares
+# Free Alternative Applications
+## Free Alternatives for famous non-free applications
 
 ## GO TO : https://maryayi.github.io/FreeAlternativeSoftwares
 
