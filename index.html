@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <link href="http://awebfont.ir/css?id=1116" rel="stylesheet" type="text/css"> -->
+<meta charset="utf-8">
+<title>Circular Slides - impress.js</title>
+<style>
+
+@font-face {
+  font-family: "yekan";
+  src: url('fonts/Yekan.eot');
+  src: url('fonts/Yekan.eot?#iefix') format("embedded-opentype"),
+   url('fonts/Yekan.woff') format("woff"),
+   url('fonts/Yekan.ttf') format("truetype"),
+   url('fonts/Yekan.svg#BYekan') format("svg");
+  font-weight: normal;
+  font-style: normal
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e876d1+21,602060+100 */
+background: #e876d1; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #e876d1 21%, #602060 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(21%,#e876d1), color-stop(100%,#602060)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #e876d1 21%,#602060 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #e876d1 21%,#602060 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #e876d1 21%,#602060 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #e876d1 21%,#602060 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e876d1', endColorstr='#602060',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 70px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+}
+
+.step {
+    position: relative;
+    padding: 40px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+    font-family: 'yekan', 'PT Serif', georgia, serif;
+    font-size: 48px;
+    line-height: 1.5;
+}
+.slide {
+  display: block;
+  width: 800px;
+  height: 600px;
+  padding: 29px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+  color: rgb(102, 102, 102);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  font-family: 'yekan', 'Open Sans', Arial, sans-serif;
+}
+.credits, .credits h2 {
+  padding-top: 0;
+}
+
+.box {
+  width: 370px;
+  height: 540px;
+}
+
+.left-box {
+  float: left;
+  background: #f7d2d2;
+  color: #c0392b;
+}
+
+.right-box {
+  float: right;
+  background: #dcf9d0;
+  color: #27ae60;
+}
+
+.swtitle {
+  height: 25%;
+}
+
+.swtitle h2 {
+  font-size: 140%;
+}
+
+.swtitle , span {
+  font-size: 60%;
+  text-align: center;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.screenshot {
+  height: 50%;
+}
+
+.screenshot img {
+  width: 85%;
+  margin: 5px auto;
+}
+
+.logo {
+  height: 25%;
+}
+
+.logo img {
+  width: 35%;
+  margin: 5px auto;
+}
+
+.libre {
+  height: 60%;
+}
+
+.libre img {
+  width: 70%;
+  margin: 5px auto;
+}
+
+.copyright {
+  font-size: 20px;
+  text-align: center;
+  z-index: 20;
+}
+
+.copyright a {
+	text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+<div id="impress">
+<!-- COVER -->
+<div class="step slide" data-x="-400" data-y="-300" data-rotate="0" data-scale="2.410625">
+  <img src="images/sfd.png" alt="SFD" style="width: 600px;">
+  <h1><span style="color: #27ae60; font-size: 60px;">FREE</span> <br> alternatives for <br> <span style="color: #c0392b; font-size: 60px;">non-FREE</span> <br> softwares</h1>
+
+</div>
+
+<!-- Slide 1 -->
+<div class="step slide" data-x="2355" data-y="-299" data-rotate="0" data-scale="1">
+
+  <div class="left-box box">
+      <div class="logo libre">
+        <img src="images/office.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>Microsoft Office</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="logo libre">
+      <img src="images/libre.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Libre Office</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 2 -->
+<div class="step slide" data-x="2220" data-y="551" data-rotate="18" data-scale="1">
+
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/word-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/Microsoft-Word-2013-icon.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>MS Word</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/writer-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/libreoffice-writer.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Libre Writer</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 3 -->
+<div class="step slide" data-x="1828" data-y="1319" data-rotate="36" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/powerpoint-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/Logo_Microsoft_PowerPoint_2013.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>MS Powerpoint</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/impress-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/256px-LibreOffice_4.0_Impress_Icon.svg.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Libre Impress</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 4 -->
+<div class="step slide" data-x="1219" data-y="1928" data-rotate="54" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/excel-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/Microsoft_Excel_2013_logo.svg.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>MS Excel</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/calc-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/LibreOffice_3.3.1_Calc_Icon.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Libre Calc</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 5 -->
+<div class="step slide" data-x="451" data-y="2320" data-rotate="72" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/access-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/access.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>MS Access</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/base-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/LibreOffice_3.3.1_Base_Icon.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Libre Base</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 6 -->
+<div class="step slide" data-x="-400" data-y="2455" data-rotate="90" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/visio-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/visio_2013.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>MS Visio</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/draw-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/256px-LibreOffice_4.0_Draw_Icon.svg.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Libre Draw</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 7 -->
+<div class="step slide" data-x="-1251" data-y="2320" data-rotate="108" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/photoshop-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/photophop-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>Adobe Photoshop</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/gimp-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/gimp-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Gimp</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 8 -->
+<div class="step slide" data-x="-2019" data-y="1928" data-rotate="126" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/notepad-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/Notepad-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>Notepad</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/atom-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/atom-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Atom</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 9 -->
+<div class="step slide" data-x="-2628" data-y="1319" data-rotate="144" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/ie-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/ie-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>IE (Edge)</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/firefox-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/firefox-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Mozilla Firefox</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 10 -->
+<div class="step slide" data-x="-3020" data-y="551" data-rotate="162" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/skype-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/skype-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>Skype</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/jitsi-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/jitsi-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Jitsi</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 11 -->
+<div class="step slide" data-x="-3155" data-y="-300" data-rotate="180" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/nero-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/nero-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>Nero</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/brasero-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/brasero-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Brasero</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 12 -->
+<div class="step slide" data-x="-3020" data-y="-1151" data-rotate="198" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/wmp-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/wmp-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>Win Media Player</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/vlc-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/vlc-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>VLC</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 13 -->
+<div class="step slide" data-x="-2628" data-y="-1919" data-rotate="216" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/premiere-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/premiere-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>Adobe Premiere</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/openshot-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/openshot-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Openshot</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 14 -->
+<div class="step slide" data-x="-2019" data-y="-2528" data-rotate="234" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/partitionmagic-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/Partition-Magic-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>Partition Magic</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/gparted-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/gparted-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Gparted</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 15 -->
+<div class="step slide" data-x="-1251" data-y="-2920" data-rotate="252" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/acrobat-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/acrobat_reader_logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>Adobe Reader</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/evince-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/Evince-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Evince</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 16 -->
+<div class="step slide" data-x="-399" data-y="-3055" data-rotate="270" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/outlook-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/outlook-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>MS Outlook</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/thunderbird-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/Thunderbird-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Thunderbird</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 17 -->
+<div class="step slide" data-x="451" data-y="-2920" data-rotate="288" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/idm-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/IDM-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>IDM</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/uget-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/uget-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Uget</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 18 -->
+<div class="step slide" data-x="1219" data-y="-2528" data-rotate="306" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/dropbox-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/dropbox-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>Dropbox</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/owncloud-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/owncloud-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>OwnCloud</h2>
+    </div>
+  </div>
+
+</div>
+
+<!-- Slide 19 -->
+<div class="step slide" data-x="1828" data-y="-1919" data-rotate="324" data-scale="1">
+  <div class="left-box box">
+      <div class="screenshot">
+        <img src="images/3dsmax-ss.jpg" alt="">
+      </div>
+      <div class="logo">
+        <img src="images/3dsmax-logo.png" alt="">
+      </div>
+      <div class="swtitle">
+        <h2>3D Studio Max</h2>
+      </div>
+  </div>
+  <div class="right-box box">
+    <div class="screenshot">
+      <img src="images/blender-ss.jpg" alt="">
+    </div>
+    <div class="logo">
+      <img src="images/blender-logo.png" alt="">
+    </div>
+    <div class="swtitle">
+      <h2>Blender</h2>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Slide 20 -->
+<div class="step slide credits" data-x="2220" data-y="-1151" data-rotate="342" data-scale="1">
+    <h3>More alternatives at ...</h3>
+    <h2><a href="https://alternativeto.net">alternativeto.net</a></h2>
+    <h3>THANKS</h3>
+    <p class="copyright">Created by <a href="https://twitter.com/maryayi" target="_blank">M.Aryayi</a></p> 
+    <p class="copyright">Powered by <a href="https://github.com/impress/impress.js/" target="_blank">Impress.js</a></p>
+</div>
+<div class="step" data-x="0" data-y="0" data-scale="11"></div>
+
+</div>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
